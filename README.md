@@ -13,9 +13,9 @@
     3. Copy Template Into Your Repository
         * git push --mirror https://github.com/GITHUB_USERNAME/WEB2630_WonderfulQuotes
             * Note: Make sure to put your GitHub Username in place of GITHUB_USERNAME
-    4. Remove Copy WEB2630_Exercise1.git
+    4. Remove Copy WEB2630_WonderfulQuotes.git
     5. Clone Your GitHub Repository
-        * git clone https://github.com/GITHUB_USERNAME/WEB2630_Exercise1         
+        * git clone https://github.com/GITHUB_USERNAME/WEB2630_WonderfulQuotes         
 3. Start ToDo Comments
     * Located in App.vue, Header.vue, NewQuote.vue, Quote.vue, QuoteGrid.vue
 4. Submit Your GitHub URL
