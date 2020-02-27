@@ -1,8 +1,8 @@
 <template>
   <div class="row">
     <!--ToDo: Use the Quote component selector-->
-    <!--Loop through the quote and index in quotes-->
-    <!--Add a click event with .native and set it equal to the deleteQuote method created below-->
+    <!--Loop through quotes using v-for and get quote and index-->
+    <!--Add a click event with .native modifier and set it equal to the deleteQuote method created below and pass index-->
     <!--Display the quote inside the appQuote component, in other words pass the data object to the slot in Quote.vue-->
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     // ToDo: Create a method deleteQuote that takes a paremeter of index
-    // Emit and event listener named quotesDeleted and passes the index parameter
+    // $emit a custom event listener named quotesDeleted and pass index in the second parameter
   }
 }
 </script>
