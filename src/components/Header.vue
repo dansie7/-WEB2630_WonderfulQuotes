@@ -13,7 +13,7 @@
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <!--ToDo: Output the number of quotes displayed on the page out of the max quotes-->
+            <!--ToDo: Output quoteCount and maxQuotes-->
           </div>
         </div>
       </div>
