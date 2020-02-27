@@ -10,7 +10,7 @@
         ></textarea>
       </div>
       <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-md-6 col-md-offset-3 form-group">
-        <!--ToDo: Add a click event with .prevent and set it equal to the createNew method created below-->
+        <!--ToDo: Add a click event with .prevent modifier and set it equal to the createNew method created below-->
         <button class="btn btn-primary">Add Quote</button>
       </div>
     </form>
@@ -21,12 +21,12 @@
 export default {
   data () {
     return {
-      // ToDo: Create a data object called quote that is initialized as an empty string
+      // ToDo: Create a data object called quote that is se to an empty string
     };
   },
   methods: {
-    // ToDo: Create a method createNew that emits an event listener named quoteAdded that passes the quote data object
-    // Re-initialize quote to an empty string
+    // ToDo: Create a method createNew that emits a custom event named quoteAdded that passes the quote data object above
+    // Set quote to an empty string
   }
 }
 </script>
