@@ -13,8 +13,8 @@
             aria-valuemin="0"
             aria-valuemax="100" :style="{width: (quoteCount / maxQuotes) * 100 + '%'}"
           >
-            <!--ToDo: Output quoteCount and maxQuotes-->
-            <p>Quote Count: {{quoteCount}} Quote Max: {{maxQuotes}}</p>
+            <!--DONE ToDo: Output quoteCount and maxQuotes-->
+            <p>{{quoteCount}} / {{maxQuotes}}</p>
           </div>
         </div>
       </div>

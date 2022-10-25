@@ -1,18 +1,18 @@
 <template>
   <div class="container">
     <!--DONE ToDo: Use the Header component selector-->
-    <!--RE-CHECK Bind data props quoteCount and set it equal to the quote length-->
-    <!--RE-CHECK Bind data props maxQuotes and set it equal to the maxQuotes created below-->
+    <!--DONE Bind data props quoteCount and set it equal to the quote length-->
+    <!--DONE Bind data props maxQuotes and set it equal to the maxQuotes created below-->
     <app-header :quoteCount="quoteCount = quotes.length" :maxQuotes="maxQuotes = maxQuotes"></app-header>
 
     <!--DONE ToDo: Use the NewQuote component selector-->
     <!--DONE Call @quoteAdded that is emitted from the NewQuote Component and pass the newQuote method created below-->
-    <app-new-quote @quoteAdded="newQuote"></app-new-quote>
+    <app-new-quote @quoteAdded="newQuote($event)"></app-new-quote>
 
     <!--DONE ToDo: Use the QuoteGrid component selector-->
-    <!--RE-CHECK Bind data props quotes and set it equal to the quotes array created below-->
-    <!--RE-CHECK Call @quoteDeleted that is emitted from the QuoteGrid Component and pass the deleteQuote method created below-->
-    <app-quote-grid :quote="quotes = quotes" @quoteDeleted="deleteQuote"></app-quote-grid>
+    <!--DONE Bind data props quotes and set it equal to the quotes array created below-->
+    <!--DONE Call @quoteDeleted that is emitted from the QuoteGrid Component and pass the deleteQuote method created below-->
+    <app-quote-grid :quote="quotes" @quotesDeleted="deleteQuote($event)"></app-quote-grid>
     <div class="row">
       <div class="col-sm-12 text-center">
         <div class="alert alert-info">Info: Click on a Quote to delete it!</div>
@@ -31,9 +31,9 @@ export default {
   data () {
     return {
       // DONE ToDo: Create an array called quotes
-      quotes: [],
-      // DONE Have at least one string by default
-      default: 'This is a Quote',
+      //DONE Have at least one string by default
+      quotes: ['Quote even if by default.'],
+
       // DONE ToDo: Create maxQuotes that is set to 10
       maxQuotes: 10
     }
