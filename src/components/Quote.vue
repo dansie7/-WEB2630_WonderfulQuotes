@@ -3,7 +3,7 @@
     <div class="panel panel-default">
       <div class="panel-body quote">
         <!--DONE ToDo: Add default slot tag for passing the quote-->
-        <slot name="quote">Quote</slot>
+        <slot name="quote"></slot>
       </div>
     </div>
   </div>
